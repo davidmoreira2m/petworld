@@ -1,3 +1,21 @@
+:root {
+   --black: #000000;
+   --blue: #3366ff;
+   --light-purple-bg: #f7f5fd;
+   --light-purple: #ece7fb;
+   --ligth-green-bg: #f2faf8;
+   --off-white: #fcfaf5;
+   --text-color: #2d2d2d;
+   --white: #ffffff;
+   --yellow: #f8d57e;
+   --font-size-l: 20px;
+   --font-size-m: 18px;
+   --font-size-s: 6px;
+   --font-size-xl: 50px;
+   --font-size-xxl: 80px;
+   --font-family-poppins: "Poppins", Helvetica;
+}
+
 * {
    margin: 0;
    padding: 0;
@@ -18,13 +36,18 @@ img {
 }
 
 body {
-   font-family: "Poppins", sans-serif;
-   color: #000;
+   font-family: var(--font-family-poppins);
+   color: var(--text-color);
+}
+
+.container {
+   max-width: 1280px;
+   margin: 0 auto;
 }
 
 /* Header */
 header {
-   background-color: #f7f5fd;
+   background-color: var(--light-purple-bg);
 }
 
 .nav-bar {
@@ -32,7 +55,7 @@ header {
    justify-content: space-between;
    place-items: center;
    padding: 23px 100px;
-   background-color: #fff;
+   background-color: var(--white);
 }
 
 .menu {
@@ -45,43 +68,62 @@ header {
 }
 
 .menu-login a {
-   color: #fff;
+   color: var(--off-white);
    padding: 12px 50px;
-   background: #3366ff;
+   background: var(--blue);
    border-radius: 10px;
    display: inline-block;
 }
 
 .banner {
-   max-width: 1280px;
-   margin: 0 auto;
    padding: 70px 100px;
    display: grid;
    grid-template-columns: 1fr 1fr;
-   gap: 100px;
+   gap: 70px;
 }
 
 .banner-text h1 {
    font-weight: 600;
-   font-size: 90px;
-   line-height: 100px;
+   font-size: var(--font-size-xxl);
+   line-height: 90px;
    margin-bottom: 30px;
+   max-width: 8ch;
 }
 
 .banner-text p {
    font-weight: 400;
-   font-size: 18px;
+   font-size: var(--font-size-m);
    line-height: 32px;
-   color: #2d2d2d7d;
-   margin-bottom: 40px;
+   color: var(--text-color);
+   opacity: 0.5;
+   margin-bottom: 60px;
 }
 
 .banner-text a {
    font-weight: 400;
-   font-size: 18px;
+   font-size: var(--font-size-m);
    line-height: 32px;
    padding: 16px 50px;
-   background: #f8d57e;
+   background: var(--yellow);
    border-radius: 10px;
    display: inline-block;
+}
+
+.video {
+   display: flex;
+   justify-content: center;
+   padding-top: 70px;
+   padding-bottom: 70px;
+   background-color: var(--ligth-green-bg);
+}
+
+/* PARTNERS */
+
+.partners > .container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 70px;
+   padding-top: 80px;
+   padding-bottom: 80px;
 }
