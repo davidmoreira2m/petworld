@@ -122,6 +122,7 @@ header {
 
 .partners > .container {
    display: flex;
+   flex-wrap: wrap;
    align-items: center;
    justify-content: center;
    gap: 70px;
@@ -303,6 +304,7 @@ header {
    h1 {
       font-size: var(--font-size-xl);
       line-height: 60px;
+      max-width: 15ch;
    }
    .banner {
       padding: 80px 25px;
@@ -323,5 +325,35 @@ header {
    .video video {
       width: 100%;
       height: 170px;
+   }
+   .partners img {
+      max-height: 23px;
+   }
+   .partners > .container {
+      gap: 30px;
+      padding-top: 41px;
+      padding-bottom: 41px;
+   }
+   .services > .container {
+      grid-template-columns: 1fr;
+      gap: 60px;
+      max-width: 250px;
+      padding-top: 80px;
+      padding-bottom: 80px;
+   }
+   .testimony > .container {
+      grid-template-columns: 1fr;
+      max-width: 265px;
+      padding-top: 27px;
+      padding-bottom: 27px;
+      text-align: left;
+      gap: 60px;
+   }
+   .contact > .container {
+      grid-template-columns: 1fr;
+      gap: 60px;
+      padding-top: 80px;
+      padding-bottom: 80px;
+      max-width: 320px;
    }
 }
